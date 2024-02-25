@@ -1,7 +1,7 @@
 # # Proyecto
 saveData = [''] # Almacen de registro de usuarios
-saveCliente = []
-saveEmpleado = []
+saveCliente = [] # Almacén de registro de cliente
+saveEmpleado = [] # Almacén de registro de Empleado
 
 print('Sistema de aerolinea')
 print('-' * 40)
