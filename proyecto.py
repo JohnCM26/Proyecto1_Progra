@@ -2,9 +2,7 @@
 saveData = [] # Almacen de registro de usuarios
 saveCliente = [] # Almacén de registro de cliente
 saveEmpleado = [] # Almacén de registro de empleado
-saveData = [''] # Almacen de registro de usuarios
-saveCliente = [] # Almacén de registro de cliente
-saveEmpleado = [] # Almacén de registro de Empleado
+seats = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 print('Sistema de aerolinea')
 print('-' * 40)
@@ -70,7 +68,6 @@ while start:
                 option = 4
                 print('-' * 40)
             else:
-                codigoBoleto = 0
                 destino = input('Digite a donde va: ').upper()
                 fecha = input('Digite la fecha en la que va a viajar: ')
                 print('Boleto vendido')
@@ -79,10 +76,10 @@ while start:
                 print(f'Codigo de boleto: {ticketCode}')
                 print(f'Origen: {origen}')
                 print(f'Destino: {destino}')
-                
+                print('Precio: 50$')
+     
                 print('-' * 40)
 
-            
         
         else:
             print('Opcion incorrecta\nintente de nuevo')
