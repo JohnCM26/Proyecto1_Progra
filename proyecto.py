@@ -42,6 +42,7 @@ while start:
                 elif user == 'EMPLEADO':
                     fullName = input('Digite su nombre completo: ')
                     iD = int(input('Digite su cedula: '))
+                    mail = input('Digite su correo electrónico: ')
                     print(user)
                     print(f'Se registro el usuario con exito')
                     print('-' * 40)
@@ -62,14 +63,16 @@ while start:
         elif option == 3: # Apartado de venta de boletos
             print('Venta de boletos')
             print('Si desea pasar al menú principal digite "X"')
-            ticketCode += 1
             origen = input('Digite de donde esta partiendo: ').upper()
             if origen == 'X':
                 option = 4
                 print('-' * 40)
             else:
+                ticketCode += 1
                 destino = input('Digite a donde va: ').upper()
                 fecha = input('Digite la fecha en la que va a viajar: ')
+                print(seats)
+                space = input('Selecione un espacio: ')
                 print('Boleto vendido')
                 print('-' * 40)
                 print('Aquí tiene su factura')
