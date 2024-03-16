@@ -2,9 +2,7 @@
 saveData = [] # Almacen de registro de usuarios
 saveCliente = [] # Almacén de registro de cliente
 saveEmpleado = [] # Almacén de registro de empleado
-saveData = [''] # Almacen de registro de usuarios
-saveCliente = [] # Almacén de registro de cliente
-saveEmpleado = [] # Almacén de registro de Empleado
+seats = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 print('Sistema de aerolinea')
 print('-' * 40)
@@ -44,6 +42,7 @@ while start:
                 elif user == 'EMPLEADO':
                     fullName = input('Digite su nombre completo: ')
                     iD = int(input('Digite su cedula: '))
+                    mail = input('Digite su correo electrónico: ')
                     print(user)
                     print(f'Se registro el usuario con exito')
                     print('-' * 40)
@@ -55,34 +54,38 @@ while start:
             print('Consultar por usuario')
             print('Si desea pasar al menú principal digite "X"')
             searchId = input('Digite cedula para buscar el usuario: ').upper()
+            
             if searchId == "X":
                 option = 4
                 print('-' * 40)
+                
             else:
                 print(searchId)
+                print('-' * 40)
         
         elif option == 3: # Apartado de venta de boletos
             print('Venta de boletos')
             print('Si desea pasar al menú principal digite "X"')
-            ticketCode += 1
             origen = input('Digite de donde esta partiendo: ').upper()
             if origen == 'X':
                 option = 4
                 print('-' * 40)
             else:
-                codigoBoleto = 0
+                ticketCode += 1
                 destino = input('Digite a donde va: ').upper()
                 fecha = input('Digite la fecha en la que va a viajar: ')
+                print(seats)
+                space = input('Selecione uno de los espacios disponibles: ')
                 print('Boleto vendido')
                 print('-' * 40)
                 print('Aquí tiene su factura')
                 print(f'Codigo de boleto: {ticketCode}')
                 print(f'Origen: {origen}')
                 print(f'Destino: {destino}')
-                
+                print('Precio: 50$')
+     
                 print('-' * 40)
 
-            
         
         else:
             print('Opcion incorrecta\nintente de nuevo')
