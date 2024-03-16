@@ -75,7 +75,7 @@ while start:
                 destino = input('Digite a donde va: ').upper()
                 fecha = input('Digite la fecha en la que va a viajar: ')
                 print(seats)
-                space = input('Selecione uno de los espacios disponibles: ')
+                space = input('Seleccione uno de los espacios disponibles')
                 print('Boleto vendido')
                 print('-' * 40)
                 print('Aquí tiene su factura')
